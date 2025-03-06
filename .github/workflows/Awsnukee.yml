@@ -58,6 +58,7 @@ jobs:
         sudo mv aws-nuke /usr/local/bin/aws-nuke
         aws-nuke -h
         echo alia-aws-account | aws-nuke -c nuke-config.yml --no-dry-run
+        echo alia-aws-account
     #aws-nuke -c nuke-config.yml --profile aws_nuke 
 
   
