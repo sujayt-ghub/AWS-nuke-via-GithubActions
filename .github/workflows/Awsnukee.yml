@@ -57,7 +57,7 @@ jobs:
         mv aws-nuke-v2.16.0-linux-amd64 aws-nuke
         sudo mv aws-nuke /usr/local/bin/aws-nuke
         aws-nuke -h
-        #aws-nuke -c nuke-config.yml --profile aws_nuke
+        aws-nuke -c nuke-config.yml --profile aws_nuke
     #aws-nuke -c nuke-config.yml --profile aws_nuke --no-dry-run
 
   
