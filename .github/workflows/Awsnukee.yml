@@ -51,7 +51,14 @@ jobs:
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: awssnuke
       run: |
-        
+        aws iam create-account-alias — profile aws_nuke — account-alias alia-aws-account
+        wget https://github.com/rebuy-de/aws-nuke/releases/download/v2.16.0/aws-nuke-v2.16.0-linux-amd64.tar.gz
+        tar -xvf aws-nuke-v2.16.0-linux-amd64.tar.gz
+        mv aws-nuke-v2.16.0-linux-amd64 aws-nuke
+        sudo mv aws-nuke /usr/local/bin/aws-nuke
+        aws-nuke -h
+        aws-nuke -c nuke-config.yml --profile aws_nuke
+    #aws-nuke -c nuke-config.yml --profile aws_nuke --no-dry-run
 
   
     
