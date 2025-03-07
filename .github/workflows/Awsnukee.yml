@@ -59,8 +59,8 @@ jobs:
         aws-nuke -h
         #echo alia-aws-account | aws-nuke -c nuke-config.yml
         #echo alia-aws-account | echo alia-aws-account | aws-nuke -c nuke-config.yml --no-dry-run
-        #aws-nuke -c nuke-config.yml --no-dry-run --force
-        echo alia-aws-account | aws-nuke -c nuke-config.yml --no-dry-run
+        aws-nuke -c nuke-config.yml --no-dry-run --force
+        #echo alia-aws-account | aws-nuke -c nuke-config.yml --no-dry-run
       
     #aws-nuke -c nuke-config.yml --profile aws_nuke 
 
